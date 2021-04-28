@@ -1,0 +1,17 @@
+---
+- name: WINDOWS-LAN-UPDATE
+  hosts: windows 10
+  gather_facts: false
+  
+  tasks:
+    - name: installing updates
+      win_updates:
+        category_names:
+        -SecurityUpdates
+        -CriticalUpdates
+        -UpdateRollups
+        whitelist:
+         - KB4577586
+         - KB2267602
+        reboot: yes
+        reboot_timeout: 120
