@@ -14,4 +14,4 @@
          - KB4577586
          - KB2267602
         reboot: yes
-        reboot_timeout: 120
+        reboot_timeout: 1200
