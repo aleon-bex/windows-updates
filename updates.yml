@@ -1,6 +1,6 @@
 ---
 - name: WINDOWS-LAN-UPDATE
-  hosts: windows 10
+  hosts: all
   gather_facts: false
   
   tasks:
