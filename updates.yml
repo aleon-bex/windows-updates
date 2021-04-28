@@ -6,10 +6,7 @@
   tasks:
     - name: installing updates
       win_updates:
-        category_names:
-        -SecurityUpdates
-        -CriticalUpdates
-        -UpdateRollups
+        category_names: ["CriticalUpdates", "SecurityUpdates", "UpdateRollups"]
         whitelist:
          - KB4577586
          - KB2267602
